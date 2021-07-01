@@ -1,6 +1,8 @@
 # Scaling and Deployment Considerations in AWS EKS
 
-![alt text](images/eks-elb-presentation.001.png)
+<p align="center">
+  <img width="400" src="images/eks-elb-presentation.001.png">
+</p>
 
 Imagine a cluster with hundreds of services each with hundreds of replicas each running on EKS that are exposed with ALBs using the ALB ingress controller (1). In this case, we may also be running a target type of ip (configured in the ingress resource) if there are either a mixture of EC2 and Fargate workloads, or to minimise the number of hops between users and the pods.
 
